@@ -4,4 +4,4 @@
 
 
 
-<img src="https://github.com/renmay/qiezi-admin/blob/1.jpg" width="1024" height="619"/>
+<img src="https://github.com/renmay/qiezi-admin/blob/1.jpg"/>
