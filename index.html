@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>茄籽TV</title>
+  <% if (process.env.NODE_ENV === 'production') { %>
+    <!-- 生产环境 -->
+    <script>document.write('<script src="./config/index.js?t=' + new Date().getTime() + '"><\/script>');</script>
+  <% }else { %>
+    <!-- 开发环境 -->
+    <link rel="shortcut icon" type="image/x-icon" href="./static/img/favicon.ico">
+    <script src="./static/config/index.js"></script>
+    <script src="./static/plugins/mock-1.0.0-beta3/mock-min.js"></script>
+    <script src="./static/plugins/echarts-3.8.5/echarts.common.min.js"></script>
+    <script src="./static/plugins/ueditor-1.4.3.3/ueditor.config.js"></script>
+    <script src="./static/plugins/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+    <script src="./static/plugins/ueditor-1.4.3.3/lang/zh-cn/zh-cn.js"></script>
+    <!--上传到阿里云SDK-->
+    <script src="./static/plugins/aliyun-upload-sdk-1.4.0/lib/es6-promise.min.js"></script>
+    <script src="./static/plugins/aliyun-upload-sdk-1.4.0/lib/aliyun-oss-sdk-5.2.0.min.js"></script>
+    <script src="./static/plugins/aliyun-upload-sdk-1.4.0/aliyun-upload-sdk-1.4.0.min.js"></script>
+    <!--阿里云点播-->
+    <script src="./static/plugins/aliyun-upload-sdk-1.4.0/aliplayer-min.js"></script>
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.7.2/skins/default/aliplayer-min.css"/>
+    <!--<link rel="stylesheet" href="./static/plugins/aliyun-upload-sdk-1.4.0/aliplayer-min.css">-->
+    <script src="./static/plugins/aliyun-upload-sdk-1.4.0/aliplayercomponents.min.js"></script>
+  <% } %>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
